@@ -5,5 +5,9 @@ RUN apt-get update
 RUN apt-get install -y python python-pip wget
 
 RUN mkdir /platform
+RUN mkdir /platform/salt
+RUN mkdir /platform/all-the-things
+
 WORKDIR /platform
-VOLUME /platform
+VOLUME /platform/salt
+VOLUME /platform/all-the-things
