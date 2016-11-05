@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Elliot Marx "elliot.marx@affirm.com"
 
 RUN apt-get update
-RUN apt-get install -y python python-pip wget vim mysql-client
+RUN apt-get install -y python python-pip wget vim mysql-client git
 
 RUN mkdir /platform
 RUN mkdir /platform/salt
